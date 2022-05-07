@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @plans.each do |plan| %>
+    <div class="content_post" style="background-image: url(<%= plan.image %>);">
+      <p><%= plan.text %></p>
+      <span class="name">
+        <%= plan.name %>
+      </span>
+    </div>
+  <% end %>
+</div>
